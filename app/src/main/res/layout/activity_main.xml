@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3D8DD"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/satisfy"
+        android:gravity="center_horizontal"
+        android:text="Simran"
+        android:padding="2dp"
+        android:background="#EF8B9C"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/chatRecyclerView"
+            android:padding="10dp"
+            android:layout_above="@id/micRelativeLayout"
+            android:layout_below="@id/actionBar">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:id="@+id/micRelativeLayout"
+        android:layout_alignParentBottom="true">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/micButton"
+
+            android:layout_centerHorizontal="true"
+            app:backgroundTint="#F8647E"
+            android:src="@drawable/ic_baseline_mic_24"
+
+            >
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
